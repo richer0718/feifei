@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="webThemez.com">
+	<title></title>
+	<link rel="favicon" href="../Public/assets/images/favicon.png">
+	<script src="../Public/admin/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../Public/new/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/min.css"/>
+	<script>
+
+	</script>
+</head>
+<body>
+<include file="Public:top"/>
+	<div id="content" class="white">
+<input type="hidden" name="sum" value="2" id="sum"/>
+  <div class="bloc" style="margin-top:0px;">
+    <div class="title">战火与秩序账号配置</div>
+    <div class="content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="center">ID</th>
+							<th class="center">配置</th>
+							<th class="center">操作</th>
+							
+                        </tr>
+						<volist name="res" id="vo">
+						<tr>
+							<td align="center">{$i}</td>
+							<td align="center">{$vo.list}</td>
+							<td align="center">
+								<a href="__URL__/deletelist/id/{$vo.id}"/>删除</a>
+							</td>
+						</tr>
+						</volist>
+						<tr>
+							<td colspan="2">
+						
+								<form method="post" action="__URL__/selectList">
+								<input type="submit" value="添加" style="margin-right:20px;"/>
+								
+								<input type="hidden" name="num" value="{$number}"/>
+								<!-- 
+								<if condition="$mark eq 'yes'">
+								<input type="checkbox" name="select" />选择默认设置
+								<a href="__URL__/setMysetting2">修改默认配置</a>
+								<else/>
+								<a href="__URL__/setMysetting">设置默认配置</a>
+								</if>
+								 -->
+								 <a>&nbsp;</a>
+								</form>
+							</td>
+							<td>
+								<input type="button" value="修改" onclick="window.location='__URL__/changeAll/num/{$number}'"/>
+							</td>
+						</tr>
+                        </tbody></table>
+                
+    </div>
+</div>
+  
+</div>
+<script>
+$(function(){
+
+})
+</script>
+</body>
+</html>

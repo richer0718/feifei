@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞飞辅助后台管理</title>
+<link rel="stylesheet" href="../Public/admin/css/style.css">
+
+
+<script type="text/javascript" src="../Public/admin/js/jquery.min.js"></script>
+
+
+<style>
+	th{
+		width:8%;
+	}
+	input{
+		margin:0;
+		padding:0;
+		height:auto;
+		min-height:auto;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="top"> <img class="logo" src="" style="height:70px;">
+  <div class="tab1" id="tab1">
+    <div class="menu">
+      <ul class="nav">
+
+          </a></li>
+		  <li>
+			<a style="font-size:20px;" href="__URL__/logOut">退出</a>
+		  </li>
+		<!--
+        <li id="one2" onclick="setTab('one',2)"><a href="#"><img src="images/14309583461214_08.png">
+          <p>财务管理</p>
+          </a></li>
+        <li id="one3" onclick="setTab('one',3)"><a href="#"><img src="images/14309583461214_16.png">
+          <p>家政服务</p>
+          </a></li>
+        <li id="one4" onclick="setTab('one',4)"><a href="#"><img src="images/14309583461214_18.png">
+          <p>资源管理</p>
+          </a></li>
+        <li id="one5" onclick="setTab('one',5)"><a href="#"><img src="images/14309583461214_10.png">
+          <p>系统管理</p>
+          </a></li>
+		  -->
+      </ul>
+    </div>
+  </div>
+</div>
+<div style="height:40px;line-height:40px;">
+<form action="__URL__/reglist" method = 'post'>
+	<p>数据统计：总个数-{$count}                <a style="padding-left:30px;"></a>解绑个数-{$count_jiebang}<a style="padding-left:30px;"></a><input type="text" name="zhucema" style="height:23px;"/><input type="submit" value="查询" style="height:23px;min-width:80px;cursor:pointer;width:80px;" /><input type="button" value="重置" onclick="window.location='__URL__/reglist' " style="height:23px;min-width:80px;cursor:pointer;width:80px;" /></p>
+</form>	
+</div>
+<div>
+<form method="post" action="__URL__/jiebang" >
+	<table width="100%" border="1px solid #000" cellpadding="2" cellspacing="0" >
+		<tr>
+			<th><input type="submit" value="解绑选中" style="cursor:pointer;"/></th>
+			<th><input type="submit" value="冻结选中" style="cursor:pointer;" name="type" /></th>
+			<th>编号1</th>
+			<th>编号2</th>
+			<th>编号3</th>
+			<th>编号4</th>
+			<th>游戏</th>
+			<th>数量</th>
+			<th>注册码</th>
+			<th>类型</th>
+			<th>到期时间</th>
+			<th>操作</th>
+		</tr>
+		<volist name="res" id="vo">
+		<tr>
+			<td><if condition="$vo.status eq '1'"><input type="checkbox" name="idarray[]" value="{$vo.id}" /></if></td>
+			<td><if condition="$vo.dongjie_status eq '1'"><input type="checkbox" name="dongjieidarray[]" value="{$vo.id}" /></if></td>
+			<td>{$vo.bh1}</td>
+			<td>{$vo.bh2}</td>
+			<td>{$vo.bh3}</td>
+			<td>{$vo.bh4}</td>
+			<td>{$vo.youxi}</td>
+			<td>{$vo.shuliang}</td>
+			<td>{$vo.zhucema}</td>
+			<td>{$vo.leixing}</td>
+			<td>{$vo.daoqishijian}</td>
+			<td>
+				<if condition ="$vo.status eq '0' " >
+				已解绑
+				<else/>
+				<a href="__URL__/jiebang/id/{$vo.id}" >解绑</a>
+				</if>
+				
+				<if condition = "$vo.dongjie_status eq '0'">
+				已冻结
+				<else/>
+				<a href="__URL__/jiebang/id/{$vo.id}/type/dongjie" >冻结</a>
+				</if>
+			</td>
+		</tr>
+		</volist>
+	</table>
+</form>
+</div>
+
+
+
+</body>
+</html>

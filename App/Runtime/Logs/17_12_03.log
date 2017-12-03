@@ -1,0 +1,633 @@
+[ 2017-12-03T22:09:52+08:00 ] 180.94.133.174 /feifei/index.php/Index/getTime
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-12-03T22:09:52+08:00 ] 180.94.133.174 /feifei/index.php/Admin/getCode/zhucema/EEOOEY8793151WLW/youxi/COK
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000512s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `think_reglist` [ RunTime:0.001002s ]
+SQL: SELECT * FROM `think_reglist` WHERE ( `zhucema` = 'EEOOEY8793151WLW' ) AND ( `youxi` = 'COK' ) LIMIT 1   [ RunTime:0.000683s ]
+
+[ 2017-12-03T22:09:52+08:00 ] 180.94.133.174 /feifei/index.php/Index/getTime
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000493s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+
+[ 2017-12-03T22:09:52+08:00 ] 180.94.133.174 /feifei/index.php/Admin/uploadNumber/bh1/682476231848882/bh2/89014103211118516789/bh3/1512310189/bh4/cokkit_kit841228_2/youxi/COK/shuliang/9999/zhucema/EEOOEY8793151WLW/leixing/nian/daoqishijian/1544443249
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000478s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `think_reglist` [ RunTime:0.000881s ]
+SQL: SELECT * FROM `think_reglist` WHERE ( `zhucema` = 'EEOOEY8793151WLW' ) LIMIT 1   [ RunTime:0.000677s ]
+SQL: UPDATE `think_reglist` SET `bh1`='682476231848882',`bh2`='89014103211118516789',`bh3`='1512310189',`bh4`='cokkit_kit841228_2',`youxi`='COK',`shuliang`=9999,`zhucema`='EEOOEY8793151WLW',`leixing`='nian',`daoqishijian`='1544443249',`status`='1',`dongjie_status`='1',`addtime`=1512310192 WHERE ( `zhucema` = 'EEOOEY8793151WLW' ) [ RunTime:0.003429s ]
+
+[ 2017-12-03T22:09:55+08:00 ] 180.94.133.174 /feifei/index.php/Index/getNewCode/wzname/cokkit/wzpwe/2/pass/kit841228/game/COK
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000526s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `think_userinfo` [ RunTime:0.000748s ]
+SQL: SELECT * FROM `think_userinfo` WHERE ( `username` = 'cokkit' ) AND ( `password` = 'kit841228' ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 2 ) AND ( `username` = 'cokkit' ) ORDER BY id asc  [ RunTime:0.018377s ]
+
+[ 2017-12-03T22:10:01+08:00 ] 39.158.76.173 /feifei/index.php/Index/getTime
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-12-03T22:10:04+08:00 ] 39.158.76.173 /feifei/index.php/Index/getNewCode/wzname/JYSYA666/wzpwe/1/pass/JjYySs19991121/game/COK
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `think_userinfo` [ RunTime:0.000780s ]
+SQL: SELECT * FROM `think_userinfo` WHERE ( `username` = 'JYSYA666' ) AND ( `password` = 'JjYySs19991121' ) LIMIT 1   [ RunTime:0.001793s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'JYSYA666' ) ORDER BY id asc  [ RunTime:0.018468s ]
+
+[ 2017-12-03T22:10:08+08:00 ] 111.23.118.25 /feifei/index.php/Index/getListResult/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000496s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.001020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_setting2` LIMIT 1   [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `think_buildarray` [ RunTime:0.000730s ]
+SQL: SELECT `array` FROM `think_buildarray` WHERE ( `name` = 'cok' ) LIMIT 1   [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000782s ]
+SQL: INSERT INTO `think_note` (`username`,`list`,`number`) VALUES ('miaomiao','jiuyou,722296056,123456,0/0,0,2,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,4,0,0,1,1,0,1,0,0,0,1,1,0,1,1,1,1,0,1,1,1,4,1,0,1',1) [ RunTime:0.000722s ]
+
+[ 2017-12-03T22:10:08+08:00 ] 111.23.118.25 /feifei/index.php?m=Index&a=select
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.001149s ]
+SQL: SELECT * FROM `think_note` WHERE ( `username` = 'miaomiao' ) ORDER BY number desc LIMIT 1   [ RunTime:0.018754s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000265s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005487s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000254s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000292s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000185s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000454s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-12-03T22:10:09+08:00 ] 111.23.118.25 /feifei/index.php/Index/ourList/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000970s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'miaomiao' ) ORDER BY id asc  [ RunTime:0.018919s ]
+SQL: SHOW COLUMNS FROM `think_mysetting` [ RunTime:0.000843s ]
+SQL: SELECT * FROM `think_mysetting` WHERE ( `name` = 'miaomiao' ) ORDER BY id asc LIMIT 1   [ RunTime:0.000425s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000278s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005632s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000244s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000265s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000163s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2017-12-03T22:10:13+08:00 ] 111.23.118.25 /feifei/index.php/Index/selectList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000525s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.000995s ]
+NOTIC: [8] Undefined index:  select /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 380 行.
+SQL: SELECT * FROM `think_setting2` ORDER BY line asc  [ RunTime:0.000805s ]
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000286s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010422s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000286s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000236s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000165s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000345s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-12-03T22:11:29+08:00 ] 60.19.158.66 /feifei/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000278s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004216s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000249s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000224s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000161s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-12-03T22:11:34+08:00 ] 111.23.118.25 /feifei/index.php/Index/getListResult/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000498s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.000957s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_setting2` LIMIT 1   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `think_buildarray` [ RunTime:0.000726s ]
+SQL: SELECT `array` FROM `think_buildarray` WHERE ( `name` = 'cok' ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000693s ]
+SQL: INSERT INTO `think_note` (`username`,`list`,`number`) VALUES ('miaomiao','jiuyou,486592245,123456,0/0,0,2,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,4,0,0,1,1,0,1,0,0,0,1,1,0,1,1,1,1,0,1,1,1,4,1,0,1',1) [ RunTime:0.000531s ]
+
+[ 2017-12-03T22:11:35+08:00 ] 111.23.118.25 /feifei/index.php?m=Index&a=select
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000746s ]
+SQL: SELECT * FROM `think_note` WHERE ( `username` = 'miaomiao' ) ORDER BY number desc LIMIT 1   [ RunTime:0.017579s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000266s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005411s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000280s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000192s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-12-03T22:11:36+08:00 ] 111.23.118.25 /feifei/index.php/Index/ourList/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000516s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000902s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'miaomiao' ) ORDER BY id asc  [ RunTime:0.019262s ]
+SQL: SHOW COLUMNS FROM `think_mysetting` [ RunTime:0.000784s ]
+SQL: SELECT * FROM `think_mysetting` WHERE ( `name` = 'miaomiao' ) ORDER BY id asc LIMIT 1   [ RunTime:0.000401s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000269s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005608s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000236s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000236s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000171s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-12-03T22:11:38+08:00 ] 60.19.158.66 /feifei/index.php/Index/checkLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000525s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `think_userinfo` [ RunTime:0.000902s ]
+SQL: SELECT * FROM `think_userinfo` WHERE ( `username` = 'maxunfei' ) AND ( `password` = 'mn2256765' ) LIMIT 1   [ RunTime:0.001601s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000266s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004370s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000242s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000228s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000162s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000378s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-12-03T22:11:40+08:00 ] 60.19.158.66 /feifei/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000528s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `think_admininfo` [ RunTime:0.000884s ]
+SQL: SELECT * FROM `think_admininfo` WHERE ( `type` = '产品介绍' ) LIMIT 1   [ RunTime:0.000407s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000285s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.005376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005425s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000222s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000239s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000166s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2017-12-03T22:11:41+08:00 ] ERR: (ThinkException) 非法操作:undefined
+[ 2017-12-03T22:11:41+08:00 ] 60.19.158.66 /feifei/index.php/Index/undefined?1512310297023
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Undefined index:  class /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  args /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  file /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type /data/home/qyu2479590001/htdocs/feifei/Core/ThinkPHP/Lib/Core/ThinkException.class.php 第 63 行.
+
+[ 2017-12-03T22:11:42+08:00 ] 111.23.118.25 /feifei/index.php/Index/selectList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.000980s ]
+NOTIC: [8] Undefined index:  select /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 380 行.
+SQL: SELECT * FROM `think_setting2` ORDER BY line asc  [ RunTime:0.000828s ]
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+NOTIC: [8] Undefined variable: str_set /data/home/qyu2479590001/htdocs/feifei/App/Lib/Action/IndexAction.class.php 第 398 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000273s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010471s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000285s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000237s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000158s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000331s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-12-03T22:11:51+08:00 ] 60.19.158.66 /feifei/index.php/Index/userCenter
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000522s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000287s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004742s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000240s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000256s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000166s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000383s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-12-03T22:11:54+08:00 ] 60.19.158.66 /feifei/index.php/Index/select
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000513s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.001488s ]
+SQL: SELECT * FROM `think_note` WHERE ( `username` = 'maxunfei' ) ORDER BY number desc LIMIT 1   [ RunTime:0.017597s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000317s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004894s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000258s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000244s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000165s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-12-03T22:11:55+08:00 ] 60.19.158.66 /feifei/index.php/Index/ourList/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.001012s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) ORDER BY id asc  [ RunTime:0.018603s ]
+SQL: SHOW COLUMNS FROM `think_mysetting` [ RunTime:0.000982s ]
+SQL: SELECT * FROM `think_mysetting` WHERE ( `name` = 'maxunfei' ) ORDER BY id asc LIMIT 1   [ RunTime:0.001933s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000270s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006529s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000288s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000264s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000183s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000429s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-12-03T22:12:00+08:00 ] 60.19.158.66 /feifei/index.php/Index/changeAll/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000890s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) ORDER BY id asc  [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.000755s ]
+SQL: SELECT * FROM `think_setting2` ORDER BY line asc  [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `think_buildarray` [ RunTime:0.000674s ]
+SQL: SELECT `array` FROM `think_buildarray` WHERE ( `name` = 'cok' ) LIMIT 1   [ RunTime:0.000412s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000274s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012729s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001949s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000620s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000175s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003570s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000368s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-12-03T22:12:13+08:00 ] 60.19.158.66 /feifei/index.php/Index/getChangeResult/num/1
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000521s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `think_buildarray` [ RunTime:0.000954s ]
+SQL: SELECT `array` FROM `think_buildarray` WHERE ( `name` = 'cok' ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `think_setting2` [ RunTime:0.000825s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_setting2` LIMIT 1   [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000705s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) ORDER BY id asc  [ RunTime:0.000962s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18652810214,smwaty012,525/693,0,2,0,0,0,0,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64334 ) [ RunTime:0.000618s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18652810314,smwaty012,523/693,0,2,0,0,0,0,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64335 ) [ RunTime:0.000515s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18802360914,maxunfei,734/293,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64366 ) [ RunTime:0.000512s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15141244591,maxunfei,732/296,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64367 ) [ RunTime:0.000472s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13591212377,maxunfei,732/294,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64368 ) [ RunTime:0.000502s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13921292381,wang19960414,616/690,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64404 ) [ RunTime:0.000500s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18861398268,xiaohu199707.,618/691,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,1,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64405 ) [ RunTime:0.000496s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15141406506,shayo123123,623/696,0,2,0,0,0,0,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,0,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64407 ) [ RunTime:0.000506s ]
+SQL: UPDATE `think_note` SET `list`='weibo,597045954@qq.com,mmx881125,725/305,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64502 ) [ RunTime:0.000476s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18113581356,lyy.123456,665/760,0,2,2,0,0,0,1,0,3,0130000,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64631 ) [ RunTime:0.000485s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13795916738,lyy.123456,664/762,0,2,2,0,0,0,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64632 ) [ RunTime:0.000463s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13898040551,maxunfei,734/295,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 64633 ) [ RunTime:0.000483s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15891391246,maxunfei,732/292,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 65014 ) [ RunTime:0.000505s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15330849693,maxunfei,726/291,0,2,2,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 69907 ) [ RunTime:0.000478s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15902988254,maxunfei,728/291,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 70747 ) [ RunTime:0.000478s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13474003676,maxunfei,730/292,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 70748 ) [ RunTime:0.000490s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15998087666,maxunfei,728/297,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 71906 ) [ RunTime:0.000508s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13009395996,maxunfei,734/291,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 71917 ) [ RunTime:0.000488s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13143560273,maxunfei,734/297,0,2,0,1,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 72085 ) [ RunTime:0.000507s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13882233534,Lyy.123456,666/764,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 73028 ) [ RunTime:0.000500s ]
+SQL: UPDATE `think_note` SET `list`='weibo,14740467102,shayo123123,621/699,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,0,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 74498 ) [ RunTime:0.000466s ]
+SQL: UPDATE `think_note` SET `list`='weibo,13464384465,shayo123123,623/702,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,0,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 74499 ) [ RunTime:0.000479s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15642830527,shayo123123,621/701,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 74500 ) [ RunTime:0.000504s ]
+SQL: UPDATE `think_note` SET `list`='weibo,18328631803,xj1993512,666/762,0,2,0,0,0,0,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,3,1,0,0,0,1,0,0,0,0,0,1,4,0,0,0' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 74596 ) [ RunTime:0.000484s ]
+SQL: UPDATE `think_note` SET `list`='weibo,15804122678,maxunfei,730/294,0,2,0,0,0,1,1,0,3,0130000,2,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,3,1,0,0,1,1,1,0,0,1,1,0,4,1,0,1' WHERE ( `number` = 1 ) AND ( `username` = 'maxunfei' ) AND ( `id` = 81260 ) [ RunTime:0.000486s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000258s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004275s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000212s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000160s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-12-03T22:12:14+08:00 ] 60.19.158.66 /feifei/index.php?m=Index&a=select
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000795s ]
+SQL: SELECT * FROM `think_note` WHERE ( `username` = 'maxunfei' ) ORDER BY number desc LIMIT 1   [ RunTime:0.017477s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000289s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.004756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004801s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000229s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000231s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000180s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000374s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-12-03T22:12:18+08:00 ] 139.205.133.109 /feifei/index.php/Index/getTime
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+
+[ 2017-12-03T22:12:21+08:00 ] 139.205.133.109 /feifei/index.php/Index/getNewCode/wzname/1332164721/wzpwe/1/pass/13321/game/COK
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `think_note` [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `think_userinfo` [ RunTime:0.000748s ]
+SQL: SELECT * FROM `think_userinfo` WHERE ( `username` = '1332164721' ) AND ( `password` = '13321' ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT * FROM `think_note` WHERE ( `number` = 1 ) AND ( `username` = '1332164721' ) ORDER BY id asc  [ RunTime:0.018024s ]
+

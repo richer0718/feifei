@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="webThemez.com">
+	<title></title>
+	<link rel="favicon" href="../Public/assets/images/favicon.png">
+	<script src="../Public/admin/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../Public/new/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/min.css"/>
+	<style>
+		#content table{
+			width:230px;
+		}
+		.bloc{
+			float:left;
+			margin-top:0px;
+		}
+	</style>
+	<script runat="server">
+	</script>
+</head>
+<body>
+<include file="Public:top"/>
+	<div id="content" class="white"  >
+	
+<form name="form1" method="post" action="__URL__/getSetResult" enctype="multipart/form-data" onSubmit="javascript:return checkform(this)">
+
+  <div class="bloc" style="margin-top:0px;">
+    <div class="title"><input type="submit" value="提交" /></div>
+    <div class="content" style="width:100px;padding-right:0;padding-left:0;">
+                    <table class="insert-tab"  style="width:100px;">
+                        <tbody>
+							<tr>
+								<th height="40" style="text-align:left;">选项</th>
+							</tr>
+							<volist name="reslist" id="vo">
+								<tr>
+									<td height="40">{$vo.bname}</td>
+									
+								</tr>
+							</volist>
+                        </tbody>
+					</table>
+                
+    </div>
+</div>
+<div class="bloc" id="superlist" style="margin-top:0px;">
+    <div class="title"></div>
+    <div class="content" style="width:60px;padding-left:0;">
+                    <table class="insert-tab"  style="width:60px;">
+                        <tbody>
+							<tr>
+								<th height="40" style="text-align:left;">账号</th>
+							</tr>
+							<volist name="reslist" id="vo" key="k">
+
+								<tr>
+									<td height="40">
+										<switch name="vo.type" >
+										<case value="0" >
+											<select  name="<?php echo $vo['bname'] ?>">
+												<option value="1" >是</option>
+												<option value="0"  <if condition="($vo.bname eq '采集铁矿')or($vo.bname eq '采集秘银')or($vo.bname eq '开启金锤子')or($vo.bname eq '升级田地')or($vo.bname eq '优先三列队')or($vo.bname eq '被打报警')or($vo.bname eq '采集加成')or($vo.bname eq '码头收货')or($vo.bname eq '自动签到')or($vo.bname eq '领取邮件')or($vo.bname eq '使用背包金币')or($vo.bname eq '使用资源箱')or($vo.bname eq '领取任务奖励')or($vo.bname eq '领取酒馆奖励')or($vo.bname eq '联盟宝藏')or($vo.bname eq '联盟捐款')or($vo.bname eq '联盟帮助他人')">selected="selected"</if>>否</option>
+											</select>
+										</case>
+										<case value="1">
+											<select style="width:95px;" name="<?php echo $vo['bname'] ?>">
+												<volist name="vo.sname" id="vol">
+													<option value="{$i-1}">{$vol}</option>
+												</volist>
+											</select>
+										</case>
+										<case  value="3">
+											<input type="hidden" name="<?php echo "1".$k ?>" value="0" />
+											<div style="height:40px;"></div>
+										</case>
+										<default />
+										<input type="text" <?php if($vo['bname'] == "采集坐标"){ ?>value="0/0"<?php }elseif($vo['bname']=="造兵上限" || $vo['bname']=="收割间隔（分）"){ ?>value="0"<?php }elseif($vo['bname'] == "账号" || $vo['bname'] == "密码"){ ?>style="display:none;"<?php } ?> name="<?php echo $vo['bname'] ?>" style="width:60px;"/>
+										</switch>
+										<?php if($vo['bname'] == "账号" || $vo['bname'] == "密码"){ ?><div style="height:40px;"></div><?php } ?>
+									</td>
+								</tr>
+							</volist>
+                        </tbody>
+					</table>
+                
+    </div>
+</div>
+
+
+</form>
+      
+</div>
+</body>
+    
+</body>
+</html>

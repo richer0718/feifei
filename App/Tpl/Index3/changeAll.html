@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="webThemez.com">
+	<title></title>
+	<link rel="favicon" href="../Public/assets/images/favicon.png">
+	<script src="../Public/admin/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../Public/new/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../Public/new/css/min.css"/>
+	<style>
+		#content table{
+			width:230px;
+		}
+		.bloc{
+			float:left;
+			margin-top:0px;
+		}
+	</style>
+	<script runat="server">
+	$(function(){
+		$("#superform").submit(function(){
+		
+			var sum = Number($('#sum').val()); //3 显示 1个
+
+			for(var i=0;i<sum;i++){
+				var j = i+"账号";
+				var k = i+"密码";
+				var jv = $("input[name="+j+"]").val();
+				var kv = $("input[name="+k+"]").val();
+				if(jv=="" || kv==""){
+					alert("请填写账号密码");
+					return false;
+				}
+			}
+
+			  
+		});
+		
+		//新增 修改全部功能
+		$('.superchange').click(function(){
+			var sum = $('#sum').val();
+			//id
+			var changeid = $(this).attr("data");
+			//值
+			var changevalue = $('select[name='+changeid+'] option:selected').val();
+			if(!changevalue){
+				var changevalue = $('input[name='+changeid+']').val();
+			}
+			
+			var trueid = '';
+
+			for(var i=0;i<sum;i++){
+				trueid_input = 'input[name='+i+changeid+']';
+				$(trueid_input).val(changevalue);
+				
+				trueid_select = 'select[name='+i+changeid+'] option[value="'+changevalue+'"]';
+				$(trueid_select).attr("selected", true);
+				
+				
+				
+			}
+			
+			
+		})
+	})
+	</script>
+</head>
+<body>
+<include file="Public:top"/>
+	<div id="content" class="white" style="width:4000px;" >
+	
+<form name="form1" method="post" id="superform" action="__URL__/getChangeResult/num/{$_GET['num']}" enctype="multipart/form-data" onSubmit="javascript:return checkform(this)">
+<input type="hidden" name="sum" id="sum" value="<?php echo $len; ?>" />
+  <div class="bloc" style="margin-top:0px;">
+    <div class="title"><input type="submit" value="提交" /></div>
+    <div class="content" style="width:100px;padding-right:0;padding-left:0;">
+                    <table class="insert-tab"  style="width:100px;">
+                        <tbody>
+							<tr>
+								<th height="40" style="text-align:left;">选项</th>
+							</tr>
+							<volist name="reslist" id="vo">
+								<tr>
+									<td height="40">{$vo.bname}</td>
+								</tr>
+							</volist>
+                        </tbody>
+					</table>
+                
+    </div>
+</div>
+
+<!-- 新增 begin-->
+<div class="bloc" style="margin-top:0px;">
+    <div class="title"></div>
+    <div class="content" style="width:180px;padding-left:0;">
+                    <table class="insert-tab"  style="width:180px;">
+                        <tbody>
+							<tr>
+								<th height="40" style="text-align:left;">修改全部</th>
+							</tr>
+							<volist name="reslist" id="vo" key="k">
+
+								<tr>
+									<td height="40">
+										<switch name="vo.type" >
+										<case value="0" >
+											<select  name="<?php echo $ii.$vo['bname'] ?>">
+												<option value="1" <if condition="$vo['value'][$ii] eq '1'">selected="selected"</if> >是</option>
+												<option value="0"  <if condition="$vo['value'][$ii] eq '0'">selected="selected"</if>>否</option>
+											</select>
+										</case>
+										
+										<case value="1" >
+											<select name ="<?php echo $ii.$vo['bname'] ?>" >
+												<?php foreach($vo['sname'] as $key => $value){ ?>
+												<option  <?php if($vo['value'][$ii] == $key ){?>selected="selected" <?php } ?>  value="<?php echo $key; ?>" > <?php echo $value; ?></option>
+												<?php } ?>
+											</select>
+										</case>
+										<case  value="3">
+											<input type="hidden" name="<?php echo $vo['bname'] ?>" value="0" />
+											<div style="height:40px;"></div>
+										</case>
+										
+										<default /><input type="text" name ="<?php $find = array('(',')'); echo str_replace($find,'',$vo['bname']) ?>" value="{$vo['value'][$ii]}" style="width:60px;"/>
+										</switch>
+										<if condition="$vo.type neq '3'">
+										<input type="button" value="修改" data ="<?php $find = array('(',')'); echo str_replace($find,'',$vo['bname']) ?>" class="superchange" />
+										</if>
+									</td>
+								</tr>
+							</volist>
+                        </tbody>
+					</table>
+                
+    </div>
+</div>
+
+<!-- 新增end -->
+
+
+<?php for($ii=0;$ii<$len;$ii++){ ?>
+<div class="bloc" id="superlist" style="margin-top:0px;">
+    <div class="title"></div>
+    <div class="content" style="width:70px;padding-left:0;">
+                    <table class="insert-tab"  style="width:60px;">
+                        <tbody>
+							<tr>
+								<th height="40" style="text-align:left;">账号<?php echo $ii+1 ?></th>
+							</tr>
+							<volist name="reslist" id="vo" key="k">
+
+								<tr>
+									<td height="40">
+										<switch name="vo.type" >
+										<case value="0" >
+											<select  name="<?php echo $ii.$vo['bname'] ?>">
+												<option value="1" <if condition="$vo['value'][$ii] eq '1'">selected="selected"</if> >是</option>
+												<option value="0"  <if condition="$vo['value'][$ii] eq '0'">selected="selected"</if>>否</option>
+											</select>
+										</case>
+										
+										<case value="1" >
+											<select name ="<?php echo $ii.$vo['bname'] ?>" >
+												<?php foreach($vo['sname'] as $key => $value){ ?>
+												<option  <?php if($vo['value'][$ii] == $key ){?>selected="selected" <?php } ?>  value="<?php echo $key; ?>" > <?php echo $value; ?></option>
+												<?php } ?>
+											</select>
+										</case>
+										<case  value="3">
+											<input type="hidden" name="<?php echo $ii.$vo['bname'] ?>" value="0" />
+											<div style="height:40px;"></div>
+										</case>
+										
+										<default /><input type="text" name ="<?php $find = array('(',')'); echo $ii.str_replace($find,'',$vo['bname']) ?>" value="{$vo['value'][$ii]}" style="width:60px;"/>
+										</switch>
+									</td>
+								</tr>
+							</volist>
+                        </tbody>
+					</table>
+                
+    </div>
+</div>
+<?php } ?>
+
+</form>
+      
+</div>
+</body>
+    
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞飞辅助后台管理</title>
+<link rel="stylesheet" href="../Public/admin/css/style.css">
+
+<script type="text/javascript" charset="utf-8" src="../Public/admin/js/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="../Public/admin/js/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="../Public/admin/js/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript" src="../Public/admin/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="../Public/admin/js/date.js"></script>
+<script>
+$(document).ready(function(){
+	$("#one1,#one2,#one3,#one4,#one5").click(function(){
+		$("#con_one_6").css("display","none")
+		})
+	$("#one0").click(function(){
+		$("#con_one_6").css("display","block")
+		})
+		
+		
+		
+	})
+	function newselect(){
+		    $('#con_column_1').hide();
+		    $('#con_column_2').hide();
+		    $('#con_column_3').hide();
+		    $('#con_column_4').hide();
+		    $('#con_column_5').hide();
+		    $('#con_column_6').hide();
+		    $('#con_column_7').hide();
+		    $('#con_column_8').hide();
+		    $('#con_column_9').show();
+		}
+</script>
+<style>
+ .result-tab {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+	text-align:center;
+	width:100%;
+	line-height:28px;
+	
+}
+.result-tab tr td{
+font-size:14px;
+}
+.result-tab tr th{
+font-size:20px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="top"> <img class="logo" src="" style="height:70px;">
+  <div class="tab1" id="tab1">
+    <div class="menu">
+      <ul class="nav">
+	  
+        <li id="one0" onclick="setTab('one',6)"><a href="#"><img src="../Public/admin/images/1430958346122214_06.png">
+          <p>回到首页</p>
+          </a></li>
+        <li  id="one1" onclick="setTab('one',1)"><a href="#"><img src="../Public/admin/images/14309583461214_06.png">
+          <p>服务管理</p>
+          </a></li>
+		  <li>
+			<a style="font-size:20px;" href="__URL__/logOut">退出</a>
+		  </li>
+		<!--
+        <li id="one2" onclick="setTab('one',2)"><a href="#"><img src="images/14309583461214_08.png">
+          <p>财务管理</p>
+          </a></li>
+        <li id="one3" onclick="setTab('one',3)"><a href="#"><img src="images/14309583461214_16.png">
+          <p>家政服务</p>
+          </a></li>
+        <li id="one4" onclick="setTab('one',4)"><a href="#"><img src="images/14309583461214_18.png">
+          <p>资源管理</p>
+          </a></li>
+        <li id="one5" onclick="setTab('one',5)"><a href="#"><img src="images/14309583461214_10.png">
+          <p>系统管理</p>
+          </a></li>
+		  -->
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="content" id="con_one_6" style="display:none;">
+  <div class="meduo">
+    <div class="hyy">
+      <p>欢迎页</p>
+    </div>
+  </div> 
+</div>
+
+<div class="content" id="con_one_1" style="display:block;">
+  <div class="left-column" style="width:10%;">
+    
+    <div class="tab2" id="tab2">
+      <dl class="call">
+        <div class="medo">
+          <dt>参数设置</dt>
+          
+          <dd id="column1" onclick="setTab('column',1)" ><a href="#">cok账号</a></dd>
+          <dd id="column1" onclick="setTab('column',2)" ><a href="#">丧尸账号</a></dd>
+          <dd id="column8" onclick="newselect()" ><a href="#">WAO账号</a></dd>
+          
+          
+          <dd id="column2" onclick="setTab('column',3)"><a href="#">产品介绍</a></dd>
+          <dd id="column3" onclick="setTab('column',4)"><a href="#">使用教程</a></dd>
+          <dd id="column4" onclick="setTab('column',5)"><a href="#">辅助下载</a></dd>
+          <dd id="column5" onclick="setTab('column',6)"><a href="#">购买正版</a></dd>
+          <dd id="column6" onclick="setTab('column',7)"><a href="#">问题汇总</a></dd>
+          <dd id="column6" ><a href="__URL__/reglist">注册码</a></dd>
+          <dd id="column6" ><a href="__URL__/changeurl" target="_blank">修改链接</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+
+  <div class="right-content" id="con_column_1" style="left:10%;width:90%;">
+	<a style="font-size:18px;">总注册人数{$user_count}；COK总代码数:{$note_count}</a>
+      <table class="result-tab">
+		<tr>
+			<th>用户名</th>
+			<th>代码</th>
+			<th>操作</th>
+		</tr>
+		<volist name="list" id="vo">
+			<tr>
+				<td style="font-size:13px;">{$vo.username}</td>
+				<td style="text-align:right;">{$vo.list}</td>
+				<td><a href="__URL__/deletelist/id/{$vo.id}"/>删除</a></td>
+			</tr>
+		</volist>
+		
+	  </table>
+	</div>
+
+
+  <div class="right-content" id="con_column_2" style="display:none">
+	<a style="font-size:18px;">总注册人数{$user_count}；丧尸总代码数:{$note_count2}</a>
+      <table class="result-tab">
+		<tr>
+			<th style="width:80px">用户名</th>
+			<th>代码</th>
+			<th>操作</th>
+		</tr>
+		<volist name="list2" id="vo">
+			<tr>
+				<td style="font-size:13px;width:50px;">{$vo.username}</td>
+				<td style="text-align:right;">{$vo.list}</td>
+				<td><a href="__URL__/deletelist2/id/{$vo.id}"/>删除</a></td>
+			</tr>
+		</volist>
+		
+	  </table>
+	</div>
+	
+	
+	<div class="right-content" id="con_column_9" style="display:none">
+	<a style="font-size:18px;">总注册人数{$user_count}；WAO总代码数:{$note_count3}</a>
+      <table class="result-tab">
+		<tr>
+			<th style="width:80px">用户名</th>
+			<th>代码</th>
+			<th>操作</th>
+		</tr>
+		<volist name="list3" id="vo">
+			<tr>
+				<td style="font-size:13px;width:50px;">{$vo.username}</td>
+				<td style="text-align:right;">{$vo.list}</td>
+				<td><a href="__URL__/deletelist3/id/{$vo.id}"/>删除</a></td>
+			</tr>
+		</volist>
+		
+	  </table>
+	</div>
+
+  
+  <div class="right-content" id="con_column_3" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">产品介绍</h5>
+	<form method="post" action="__URL__/getUditor1">
+		<script id="editor" name="editor" type="text/plain" style="width:100%;height:400px;">{$content1}</script>
+		<script type="text/javascript">
+		//实例化编辑器
+		 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor');
+		</script>
+		<input type="submit" value="修改" />
+	</form>
+    </div>
+  </div>
+  <div class="right-content" id="con_column_4" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">使用教程</h5>
+	<form method="post" action="__URL__/getUditor2">
+		<script id="editor2" name="editor2" type="text/plain" style="width:100%;height:400px;">{$content2}</script>
+		<script type="text/javascript">
+		//实例化编辑器
+		 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor2');
+		</script>
+		<input type="submit" value="修改" />
+	</form>
+    </div>
+  </div>
+  <div class="right-content" id="con_column_5" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">辅助下载</h5>
+	<form method="post" action="__URL__/getUditor3">
+		<script id="editor3" name="editor3" type="text/plain" style="width:100%;height:400px;">{$content3}</script>
+		<script type="text/javascript">
+		//实例化编辑器
+		 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor3');
+		</script>
+		<input type="submit" value="修改" />
+	</form>
+    </div>
+  </div>
+  <div class="right-content" id="con_column_6" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">购买正版</h5>
+	<form method="post" action="__URL__/getUditor4">
+		<script id="editor4" name="editor4" type="text/plain" style="width:100%;height:400px;">{$content4}</script>
+		<script type="text/javascript">
+		//实例化编辑器
+		 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor4');
+		</script>
+		<input type="submit" value="修改" />
+	</form>
+    </div>
+  </div>
+  <div class="right-content" id="con_column_7" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">问题汇总</h5>
+	<form method="post" action="__URL__/getUditor5">
+		<script id="editor5" name="editor5" type="text/plain" style="width:100%;height:400px;">{$content5}</script>
+		<script type="text/javascript">
+		//实例化编辑器
+		 //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor5');
+		</script>
+		<input type="submit" value="修改" />
+	</form>
+    </div>
+  </div>
+  
+  <div class="right-content" id="con_column_8" style="display:none">
+    <div style="width:95%;text-align:center;">
+	<h5 style="font-size:43px;margin:0;">注册码</h5>
+	
+    </div>
+  </div>
+  
+  
+  
+</div>
+</div>
+
+
+<div class="content"id="con_one_2" style="display:none;">
+  <div class="left-column">
+    <div class="service">
+      <h5>财务管理</h5>
+    </div>
+    <div class="tab3" id="tab3">
+      <dl class="call">
+        <div class="medo medo1">
+          <dt>收费中心</dt>
+          <dd id="colum1" onclick="setTab('colum',1)" ><a href="#">水费</a></dd>
+          <dd id="colum2" onclick="setTab('colum',2)"><a href="#">电费</a></dd>
+          <dd id="colum3" onclick="setTab('colum',3)"><a href="#">燃气费</a></dd>
+          <dd id="colum4" onclick="setTab('colum',4)"><a href="#">电视费</a></dd>
+          <dd id="colum5" onclick="setTab('colum',5)"><a href="#">电梯费</a></dd>
+          <dd id="colum6" onclick="setTab('colum',6)"><a href="#">卫生费</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+<div class="meduo meduo1">
+  <div class="right-content" id="con_colum_1">
+    <center>
+      <span style="font-size:100px;"> 7</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colum_2" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 8</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colum_3" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 9</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colum_4" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 10</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colum_5" style="display:none">
+    <center>
+      <span style="font-size:100px;">11</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colum_6" style="display:none">
+    <center>
+      <span style="font-size:100px;">12</span>
+    </center>
+  </div>
+</div>
+</div>
+<div class="content"id="con_one_3" style="display:none;">
+  <div class="left-column">
+    <div class="service">
+      <h5>家政服务</h5>
+    </div>
+    <div class="tab4" id="tab4">
+      <dl class="call">
+        <div class="medo medo2">
+          <dt>服务中心</dt>
+          <dd id="colun1" onclick="setTab('colun',1)" ><a href="#">租房服务</a></dd>
+          <dd id="colun2" onclick="setTab('colun',2)"><a href="#">售房服务</a></dd>
+          <dd id="colun3" onclick="setTab('colun',3)"><a href="#">客户服务</a></dd>
+          <dd id="colun4" onclick="setTab('colun',4)"><a href="#">纠纷服务</a></dd>
+          <dd id="colun5" onclick="setTab('colun',5)"><a href="#">法律服务</a></dd>
+          <dd id="colun6" onclick="setTab('colun',6)"><a href="#">民生服务</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+
+<div class="meduo meduo2">
+  <div class="right-content" id="con_colun_1">
+    <center>
+      <span style="font-size:100px;"> 13</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colun_2" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 14</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colun_3" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 15</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colun_4" style="display:none">
+    <center>
+      <span style="font-size:100px;"> 16</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colun_5" style="display:none">
+    <center>
+      <span style="font-size:100px;">17</span>
+    </center>
+  </div>
+  <div class="right-content" id="con_colun_6" style="display:none">
+    <center>
+      <span style="font-size:100px;">18</span>
+    </center>
+  </div>
+</div>
+</div>
+<div class="content"id="con_one_4" style="display:none;">
+  <div class="left-column">
+    <div class="service">
+      <h5>资源管理</h5>
+    </div>
+    <div class="tab5" id="tab5">
+      <dl class="call">
+        <div class="medo medo3">
+          <dt>资源管理</dt>
+          <dd id="colunm1" onclick="setTab('colunm',1)" ><a href="#">节约用水</a></dd>
+          <dd id="colunm2" onclick="setTab('colunm',2)"><a href="#">节约用电</a></dd>
+          <dd id="colunm3" onclick="setTab('colunm',3)"><a href="#">注意防水</a></dd>
+          <dd id="colunm4" onclick="setTab('colunm',4)"><a href="#">注意防火</a></dd>
+          <dd id="colunm5" onclick="setTab('colunm',5)"><a href="#">关紧门窗</a></dd>
+          <dd id="colunm6" onclick="setTab('colunm',6)"><a href="#">务要扰民</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="meduo meduo3">
+    <div class="right-content" id="con_colunm_1">
+      <center>
+        <span style="font-size:100px;"> 19</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colunm_2" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 20</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colunm_3" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 21</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colunm_4" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 22</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colunm_5" style="display:none">
+      <center>
+        <span style="font-size:100px;">23</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colunm_6" style="display:none">
+      <center>
+        <span style="font-size:100px;">24</span>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="content"id="con_one_5" style="display:none;">
+  <div class="left-column">
+    <div class="service">
+      <h5>系统管理</h5>
+    </div>
+    <div class="tab6" id="tab6">
+      <dl class="call">
+        <div class="medo medo4">
+          <dt>系统管理</dt>
+          <dd id="colnm1" onclick="setTab('colnm',1)" ><a href="#">系统设置</a></dd>
+          <dd id="colnm2" onclick="setTab('colnm',2)"><a href="#">内容设置</a></dd>
+          <dd id="colnm3" onclick="setTab('colnm',3)"><a href="#">栏目设置</a></dd>
+          <dd id="colnm4" onclick="setTab('colnm',4)"><a href="#">功能设置</a></dd>
+          <dd id="colnm5" onclick="setTab('colnm',5)"><a href="#">页面管理</a></dd>
+          <dd id="colnm6" onclick="setTab('colnm',6)"><a href="#">退出管理</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="meduo meduo4">
+    <div class="right-content" id="con_colnm_1" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 25</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colnm_2" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 26</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colnm_3" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 27</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colnm_4" style="display:none">
+      <center>
+        <span style="font-size:100px;"> 28</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colnm_5" style="display:none">
+      <center>
+        <span style="font-size:100px;">29</span>
+      </center>
+    </div>
+    <div class="right-content" id="con_colnm_6" style="display:none">
+      <center>
+        <span style="font-size:100px;">30</span>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

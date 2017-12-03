@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>飞飞辅助后台管理</title>
+<link rel="stylesheet" href="../Public/admin/css/style.css">
+
+
+<script type="text/javascript" src="../Public/admin/js/jquery.min.js"></script>
+
+
+<style>
+	th{
+		width:8%;
+	}
+	input{
+		margin:0;
+		padding:0;
+		height:auto;
+		min-height:auto;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="top"> <img class="logo" src="" style="height:70px;">
+  <div class="tab1" id="tab1">
+    <div class="menu">
+      <ul class="nav">
+
+          </a></li>
+		  <li>
+			<a style="font-size:20px;" href="__URL__/logOut">退出</a>
+		  </li>
+		<!--
+        <li id="one2" onclick="setTab('one',2)"><a href="#"><img src="images/14309583461214_08.png">
+          <p>财务管理</p>
+          </a></li>
+        <li id="one3" onclick="setTab('one',3)"><a href="#"><img src="images/14309583461214_16.png">
+          <p>家政服务</p>
+          </a></li>
+        <li id="one4" onclick="setTab('one',4)"><a href="#"><img src="images/14309583461214_18.png">
+          <p>资源管理</p>
+          </a></li>
+        <li id="one5" onclick="setTab('one',5)"><a href="#"><img src="images/14309583461214_10.png">
+          <p>系统管理</p>
+          </a></li>
+		  -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:10px;margin-left:20px;">
+<form method="post" action="__URL__/changeUrlRes" method="post">
+    修改链接：
+	<input type="text" name="url" value="{$url}" style="height:30px;width:400px;"/>
+	<input type="submit" value="修改" style="height:30px;width:80px;cursor:pointer;" />
+</form>
+</div>
+
+
+
+</body>
+</html>
